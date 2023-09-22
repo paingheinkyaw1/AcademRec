@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Label layoutX="32.0" layoutY="135.0" prefHeight="19.0" prefWidth="35.0" text="Date:">
+			<font>
+				<Font name="Nirmala UI" size="15.0" />
+			</font>
+		</Label>
+		<TextField fx:id="dateTextField" layoutX="137.0" layoutY="129.0" prefHeight="31.0" prefWidth="237.0" promptText="mm/dd/yyyy" />
+		<Label layoutX="32.0" layoutY="182.0" text="First Name:">
+         <font>
+            <Font name="Nirmala UI" size="15.0" />
+         </font></Label>
+		<TextField fx:id="firstTextField" layoutX="137.0" layoutY="176.0" prefHeight="31.0" prefWidth="237.0" />
+		<Label layoutX="32.0" layoutY="220.0" text="Last Name:" />
+		<TextField fx:id="lastNameField" layoutX="137.0" layoutY="215.0" prefHeight="31.0" prefWidth="237.0" />
+		<Label layoutX="32.0" layoutY="266.0" text="Gender:" />
+		<Label layoutX="32.0" layoutY="318.0" text="Target School:" />
+		<Label layoutX="32.0" layoutY="361.0" text="Program:" />
+		<Label layoutX="32.0" layoutY="426.0" text="First Semester:" />
+		<Label layoutX="32.0" layoutY="471.0" text="Year:" />
+		<Label layoutX="32.0" layoutY="513.0" text="First Course:" />
+		<ChoiceBox fx:id="genderChoiceBox" layoutX="137.0" layoutY="261.0" prefHeight="31.0" prefWidth="81.0" />
+		<TextField fx:id="targetSchoolTextField" layoutX="138.0" layoutY="313.0" prefHeight="31.0" prefWidth="237.0" />
+		<TextField fx:id="firstSemesterYearTextField" layoutX="139.0" layoutY="466.0" prefHeight="31.0" prefWidth="81.0" />
+		<Label layoutX="440.0" layoutY="135.0" text="Additional Courses:" />
+		<Label layoutX="400.0" layoutY="263.0" text="Academic Characteristics:" />
+		<Label layoutX="408.0" layoutY="389.0" text="Personal Characteristics:" />
+		<ComboBox fx:id="firstCourseComboBox" layoutX="139.0" layoutY="508.0" prefHeight="31.0" prefWidth="237.0" />
+		<ComboBox fx:id="firstSemesterComboBox" layoutX="139.0" layoutY="421.0" prefHeight="31.0" prefWidth="237.0" />
+		<ChoiceBox fx:id="programChoiceBox" layoutX="138.0" layoutY="356.0" prefHeight="31.0" prefWidth="237.0" />
+		<Button fx:id="compileButton" layoutX="851.0" layoutY="534.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="143.0" text="COMPILE" />
+		<Label layoutX="459.0" layoutY="289.0" />
+		<Label layoutX="524.0" layoutY="182.0" text="Grade:" />
+		<TextField fx:id="courseGradeField" layoutX="587.0" layoutY="177.0" prefHeight="31.0" prefWidth="74.0" />
+		<Button fx:id="addCourseButton" layoutX="858.0" layoutY="177.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="143.0" text="Add Course" />
+		<ListView fx:id="personalCharacteristicsListView" layoutX="588.0" layoutY="381.0" prefHeight="105.0" prefWidth="409.0" />
+      <AnchorPane prefHeight="120.0" prefWidth="1024.0" style="-fx-background-color: #948121;">
+         <children>
+      		<Label layoutX="39.0" layoutY="39.0" text="Create a Recommendation" textAlignment="CENTER" textFill="WHITE">
+      			<font>
+      				<Font name="Bell MT" size="40.0" />
+      			</font>
+      		</Label>
+      		<Button fx:id="backButton" layoutX="850.0" layoutY="24.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="143.0" text="BACK" />
+         </children>
+      </AnchorPane>
+		<ListView fx:id="academicCharacteristicsListView" layoutX="588.0" layoutY="258.0" prefHeight="105.0" prefWidth="409.0" />
+      <ChoiceBox fx:id="additionalCoursesChoiceBox" layoutX="587.0" layoutY="130.0" prefHeight="31.0" prefWidth="271.0" />
+      <TextField fx:id="firstCourseGradeField" layoutX="137.0" layoutY="550.0" prefHeight="31.0" prefWidth="74.0" />
+      <Label layoutX="71.0" layoutY="555.0" text="Grade:" />
+      <TableView fx:id="additionalCoursesTableView" blendMode="LIGHTEN" layoutX="8.0" layoutY="154.0" prefHeight="0.0" prefWidth="0.0">
+        <columns>
+          <TableColumn fx:id="courseNameColumn" prefWidth="347.0" text="Name" />
+          <TableColumn fx:id="courseGradeColumn" minWidth="0.0" prefWidth="81.0" text="Grade" />
+        </columns>
+      </TableView>
+      <Label fx:id="errorMessage" layoutX="530.0" layoutY="539.0" prefHeight="22.0" prefWidth="297.0" textFill="RED">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+	</children>
+</AnchorPane>

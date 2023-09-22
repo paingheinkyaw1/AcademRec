@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+
+	<children>
+      <AnchorPane prefHeight="600.0" prefWidth="216.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <TabPane layoutX="-6.0" layoutY="121.0" prefHeight="480.0" prefWidth="1030.0" side="LEFT" style="-fx-tab-min-height: 14em; -fx-tab-min-width: 7em; -fx-tab-max-height: 12em; -fx-tab-max-width: 7em; -fx-padding: 0em; -fx-background-insets: 0em; -fx-background-color: #FFFFFF;" stylesheets="@application.css" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab fx:id="facultytab">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                        		<Pane layoutX="-5.0" layoutY="-1.0" prefHeight="482.0" prefWidth="853.0">
+                        			<children>
+                                    <AnchorPane layoutY="6.0" prefHeight="463.0" prefWidth="835.0">
+                                       <children>
+                              				<Text layoutX="30.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Signature">
+                              					<font>
+                              						<Font name="Bell MT" size="20.0" />
+                              					</font>
+                              				</Text>
+                              				<Text layoutX="26.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semesters">
+                              					<font>
+                              						<Font name="Bell MT" size="20.0" />
+                              					</font>
+                              				</Text>
+                              				<Text layoutX="393.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Courses">
+                              					<font>
+                              						<Font name="Bell MT" size="20.0" />
+                              					</font>
+                              				</Text>
+                              				<Text layoutX="393.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Signature">
+                              					<font>
+                              						<Font name="Bell MT" size="20.0" />
+                              					</font>
+                              				</Text>
+                              				<ListView fx:id="semesterListView" layoutX="29.0" layoutY="254.0" prefHeight="93.0" prefWidth="280.0" />
+                              				<TextField fx:id="coursesTextField" layoutX="393.0" layoutY="359.0" prefHeight="31.0" prefWidth="339.0" promptText="Enter New Course" />
+                              				<TextField fx:id="semesterTextField" layoutX="29.0" layoutY="357.0" prefHeight="31.0" prefWidth="280.0" promptText="Enter New Semester" />
+                              				<ListView fx:id="coursesListView" layoutX="393.0" layoutY="256.0" prefHeight="91.0" prefWidth="338.0" />
+                              				<TextField fx:id="fullNameTextField" layoutX="30.0" layoutY="56.0" prefHeight="31.0" prefWidth="162.0" promptText="Full Name" />
+                              				<TextField fx:id="titleTextField" layoutX="198.0" layoutY="56.0" prefHeight="31.0" prefWidth="105.0" promptText="Title" />
+                              				<TextField fx:id="schoolTextField" layoutX="30.0" layoutY="97.0" prefHeight="31.0" prefWidth="274.0" promptText="School Name" />
+                              				<TextField fx:id="emailTextField" layoutX="30.0" layoutY="177.0" prefHeight="31.0" prefWidth="277.0" promptText="Email" />
+                              				<TextField fx:id="phoneNumberTextField" layoutX="180.0" layoutY="136.0" prefHeight="26.0" prefWidth="124.0" promptText="Phone Number" />
+                              				<Button fx:id="compileButton1" layoutX="624.0" layoutY="410.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="165.0" text="Save" />
+                              				<TextField fx:id="departmentTextField" layoutX="30.0" layoutY="136.0" prefHeight="31.0" prefWidth="142.0" promptText="Department" />
+                                          <Label fx:id="fullNameLabel" layoutX="393.0" layoutY="56.0" text="Full Name">
+                                             <font>
+                                                <Font name="Nirmala UI Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="titleLabel" layoutX="393.0" layoutY="97.0" prefHeight="27.0" prefWidth="354.0" text="Title">
+                                             <font>
+                                                <Font name="Nirmala UI Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="schoolLabel" layoutX="393.0" layoutY="123.0" prefHeight="27.0" prefWidth="205.0" text="School Name, ">
+                                             <font>
+                                                <Font name="Nirmala UI Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="emailLabel" layoutX="393.0" layoutY="148.0" prefHeight="27.0" prefWidth="339.0" text="Email">
+                                             <font>
+                                                <Font name="Nirmala UI Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="phoneLabel" layoutX="393.0" layoutY="175.0" prefHeight="27.0" prefWidth="351.0" text="Phone Number">
+                                             <font>
+                                                <Font name="Nirmala UI Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="departmentLabel" layoutX="614.0" layoutY="123.0" prefHeight="27.0" prefWidth="185.0" text="Department">
+                                             <font>
+                                                <Font name="Nirmala UI Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="errorLabel" layoutX="164.0" layoutY="419.0" prefHeight="21.0" prefWidth="369.0" textFill="RED">
+                                             <font>
+                                                <Font name="Bell MT" size="15.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                        			</children>
+                        		</Pane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                     <graphic>
+                        <ImageView fitHeight="140.0" fitWidth="187.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../facultyicon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Tab>
+                <Tab fx:id="studenttab">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Text layoutX="14.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Academic Characteristics" wrappingWidth="236.625">
+                                 <font>
+                                    <Font name="Bell MT" size="20.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="academicCharacteristicsTextField" layoutX="13.0" layoutY="225.0" prefHeight="31.0" prefWidth="411.0" promptText="Enter New Characteristics" />
+                              <Text layoutX="450.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Characteristics">
+                                 <font>
+                                    <Font name="Bell MT" size="20.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="personalCharacteristicsTextField" layoutX="450.0" layoutY="225.0" prefHeight="31.0" prefWidth="345.0" promptText="Enter New Characteristics" />
+                              <ListView fx:id="personalCharacteristicsListView" layoutX="451.0" layoutY="62.0" prefHeight="147.0" prefWidth="343.0" />
+                              <ListView fx:id="academicCharacteristicsListView" layoutX="14.0" layoutY="63.0" prefHeight="147.0" prefWidth="409.0" />
+                              <Button fx:id="compileButton" layoutX="524.0" layoutY="383.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="252.0" text="Save" />
+                              <Text layoutX="14.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program Names">
+                                 <font>
+                                    <Font name="Bell MT" size="20.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="programTextField" layoutX="14.0" layoutY="408.0" prefHeight="31.0" prefWidth="413.0" promptText="Enter New Programs" />
+                              <ListView fx:id="programListView" layoutX="14.0" layoutY="293.0" prefHeight="102.0" prefWidth="413.0" />
+                           </children></AnchorPane>
+                     </content>
+                     <graphic>
+                        <ImageView fitHeight="197.0" fitWidth="192.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../studenticon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            <AnchorPane layoutX="-4.0" prefHeight="137.0" prefWidth="1030.0" style="-fx-background-color: #948121; -fx-border-color: #342800;">
+               <children>
+      				<Text fill="WHITE" layoutX="32.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Profile">
+      					<font>
+      						<Font name="Bell MT" size="44.0" />
+      					</font>
+      				</Text>
+      				<Button fx:id="backButton" layoutX="884.0" layoutY="20.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="119.0" text="Back" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+	</children>
+</AnchorPane>
